@@ -1,0 +1,48 @@
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.png);
+    background-color: var(--secondary-bkgcolor);
+    max-width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero {
+    
+    &__container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+    &__btn {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    background-color: var(--button-color-hero);
+    color: var(--hero-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    min-height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+    &__btn--active:active {
+    background-color: var(--button-color-active);
+    }
+}
