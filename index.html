@@ -23,12 +23,12 @@
     />
 
     <!--Custom styles-->
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body class="page">
     <!--Шапка сайту-->
     <header class="header">
-      <div class="header__container container">
+      <div class="container header__container">
         <a class="logo" href="./index.html"
           >Web<span class="header-logo">Studio</span></a
         >
@@ -49,27 +49,32 @@
 
         <ul class="header__group">
           <li class="list-item">
-            <a class="link__contact" href="mailto:info@devstudio.com">
+            <a class="link__contact header__mail" href="mailto:info@devstudio.com">
              <svg class="link-address" width="16" height="12">
              <use href="./images/icons.svg#icon-envelope-hover"></use>
              </svg>info@devstudio.com</a>
             </li>
           
           <li class="list-item">
-            <a class="link__contact" href="tel:+38 096 111 11 11">
+            <a class="link__contact header__tel" href="tel:+38 096 111 11 11">
               <svg class="link-address" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a>
             </li>
         </ul>
+        <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!--Секція hero-->
     <main>
       <section class="hero">
-        <div class="hero__container container">
+        <div class="container hero__container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__btn hero__btn--active" type="button" data-modal-open>Замовити послугу</button>
         </div>
@@ -343,41 +348,41 @@
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="list clients__list">
-            <li class="list-item clients__item">
+            <li class="clients__item">
               <div class="clients-block"><a class="clients__link link" href="" width="170px" heighth="92px">
                   <svg class="clients__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo"></use>
                   </svg>
                 </a></div>
             </li>
-            <li class="list-item clients__item">
+            <li class="clients__item">
               <div class="clients-block"><a class="clients__link link" href="" width="170px" heighth="92px">
                   <svg class="clients__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-1"></use>
                   </svg>
                 </a></div>
             </li>
-            <li class="list-item clients__item">
+            <li class="clients__item">
               <div class="clients-block"><a class="clients__link link" href="" width="170px" heighth="92px">
                   <svg class="clients__icon" width="106" height="60"> class="" width="41px" height="47px"<use
                       href="./images/icons.svg#icon-Logo-2"></use></svg>
                 </a></div>
             </li>
-            <li class="list-item clients__item">
+            <li class="clients__item">
               <div class="clients-block"><a class="clients__link link" href="" width="170px" heighth="92px">
                   <svg class="clients__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-3"></use>
                   </svg>
                 </a></div>
             </li>
-            <li class="list-item clients__item">
+            <li class="clients__item">
               <div class="clients-block"><a class="clients__link link" href="" width="170px" heighth="92px">
                   <svg class="clients__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-4"></use>
                   </svg>
                 </a></div>
             </li>
-            <li class="list-item clients__item">
+            <li class=" clients__item">
               <div class="clients-block"><a class="clients__link link" href="" width="170px" heighth="92px">
                   <svg class="clients__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-5"></use>
@@ -531,7 +536,58 @@
       </div>
     </div> 
 
-    <script src="./js/modal.js">
-    </script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu list">
+        <li>
+          <a class="menu-nav-link link" href="./index.html">Студія</a>
+        </li>
+        <li>
+          <a class="menu-nav-link menu-portfolio-link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li>
+          <a class="menu-nav-link link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class=" menu__contacts-list list">
+        <li>
+          <a class="menu-tel link " href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a class="menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li>
+          <a class="menu-socials link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">Instagram</a>
+        </li>
+        <li>
+          <a class="menu-socials link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Twitter">Twitter</a>
+        </li>
+        <li>
+          <a class="menu-socials link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook">Facebook</a>
+        </li>
+        <li>
+          <a class="menu-socials link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            aria-label="Linkedin">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
+
 </html>

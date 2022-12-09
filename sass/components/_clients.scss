@@ -1,14 +1,23 @@
    .clients {
 
-
     &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+   
+    
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        }
     }
 
     &__icon {
-    display: flex;
+    // display: flex;
     fill: currentColor;
     transition-property: color;
     transition-duration: 250ms;
@@ -18,16 +27,40 @@
     &__link {
     color: var(--social-links);
     display: flex;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--social-links);
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
-    transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    @media screen and (max-width: 479px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+    }
+
+     @media screen and (min-width: 768px) {
+    
+    max-width: 226px;
+    max-height: 92px;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+     }
+
+
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
     &__link:hover,
