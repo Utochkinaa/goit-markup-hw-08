@@ -1,26 +1,22 @@
 .services {
-
-@media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: none;
-    
-}
+  }
 
-
-    &__list {
+  &__list {
     display: flex;
     gap: 30px;
-}
+  }
 
-    &__item {
+  &__item {
     width: 370px;
-}
+  }
 
-    &__card {
+  &__card {
     position: relative;
+  }
 
-}
-
-    &__description {
+  &__description {
     position: absolute;
 
     font-weight: 700;
@@ -38,6 +34,5 @@
     height: 70px;
     right: 0;
     bottom: 0;
-}
-
+  }
 }
