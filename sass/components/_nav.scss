@@ -1,6 +1,4 @@
 
-
-
 .nav__list {
     font-weight: 500;
     line-height: 1.14;
@@ -9,6 +7,10 @@
     min-width: 45px;
     margin-left: 93px;
     margin-right: auto;
+
+@media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .nav__link:hover,
@@ -30,15 +32,10 @@
     color: var(--link-active);
 }
 
-.nav__list {
-    margin-right: 50px;
-}
-
 .nav {
     display: flex;
-    align-items: center;
     margin-right: auto;
-    margin-left: 0;
+   
 }
 
 .nav__item {
@@ -46,6 +43,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 50px;
-    display: block;
-    align-items: center;
 }
+
+.link-address {
+    fill: currentColor;
+    display: flex;
+    gap: 10px;
+ }

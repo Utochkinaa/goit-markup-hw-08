@@ -135,27 +135,34 @@
           <ul class="services__list">
             <li class="services__item list-item">
               <div class="services__card">
-                <img class="img" src="./images/box2.jpg" alt="оптимізація" width="370">
+                <picture>
+                   <source media="(min-width: 1200px" srcset="images\services\img_lg-@1x-result.jpg" 1x,
+                   images\services\img_lg-@2x-result.jpg 2x>
+                  <img class="img" src="images\services\img_lg-@1x-result.jpg" 
+                  alt="верстка">
+                </picture>
+                
                 <p class="services__description">Десктопні додатки</p>
               </div>
             </li>
             <li class="services__item list-item">
               <div class="services__card">
-              <img
-                class="img"
-                src="./images/box2.jpg"
-                alt="оптимізація"
-                width="370">
+              <picture>
+                <source media="(min-width: 1200px" srcset="images\services\img_lg-@1x-1_result.jpg" 1x,
+                  images\services\img_lg-@2x-1_result.jpg 2x>
+                <img class="img" src="images\services\img_lg-@1x-1_result.jpg" 
+                alt="оптимізація">
+              </picture>
                 <p class="services__description">Мобільні додатки</p>
               </div>
             </li>
             <li class="services__item list-item">
               <div class="services__card">
-              <img
-                class="img"
-                src="./images/box3.jpg"
-                alt="дизайн"
-                width="370">
+              <picture>
+                <source media="(min-width: 1200px" srcset="images\services\img_lg-@1x-2_result.jpg" 1x,
+                  images\services\img_lg-@2x-2_result.jpg 2x>
+                <img class="img" src="images\services\img_lg-@1x-2_result.jpg" alt="дизайн">
+              </picture>
                 <p class="services__description">Дизайнерські рішення</p>
                 </div>
             </li>
@@ -397,13 +404,13 @@
 
     <footer class="footer">
       <div class="footer__container container ">
-        <div>
+        <div class="tablet-footer-block"><div class="footer__address-block">
         <a class="logo-footer" href="./index.html"
           >Web<span class="logo-accent">Studio</span></a>
-        <address>
+        <address class="address-list list">
           <ul class="contacts-list">
            <li class="list-item contact-address">
-              <a class="address" href="address:м. Київ, пр-т Лесі Українки, 26">
+              <a class="footer__address address" href="address:м. Київ, пр-т Лесі Українки, 26">
                 м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
@@ -456,13 +463,13 @@
             </li></ul>
         </ul>
       </div>
-      <div class="footer__send-mail">
-        <form>
+      </div>
+
+      <form class="footer__send-mail">
           <strong class="footer__title">Підпишіться на розсилку</strong>
           <div class="footer__send-block">
-          <label for="mail-footer">
-            
-              <input class="footer__input" type="text" placeholder="E-mail" name="mail-footer">
+          <label class="footer__mail" for="mail-footer">
+              <input class="footer__input" type="text" placeholder="E-mail" name="mail-footer" id="mail-footer">
           </label>
           <button class="footer__btn" type="submit">
             Підписатися
@@ -472,7 +479,6 @@
           </button>
       </div>
       </form>
-      
       </div>
     </div>
     </footer>

@@ -1,15 +1,28 @@
 .logo {
-    font-style: Bold;
-    font-size: 26px;
+    
+    font-size: 24px;
     font-weight: 700;
     color: var(--link-active);
     text-decoration: none;
     font-family: var(--logo-font);
-    line-height: 1.19;
+    line-height: 1.17;
     display: block;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+
+    @media screen and (min-width: 768px) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
 }
 
 .header-logo {
