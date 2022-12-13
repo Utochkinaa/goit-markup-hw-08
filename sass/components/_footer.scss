@@ -53,6 +53,7 @@
   &__send-mail {
     display: block;
     
+    
   }
 
   &__title {
@@ -154,7 +155,7 @@
 
 .address-list,
 .contacts {
-  color: var(--hero-color);
+  color: var(--contacts-footer);
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -175,7 +176,7 @@
 // }
 
 .contacts-list a {
-  color: var(--contacts-footer);
+  
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
