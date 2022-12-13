@@ -1,6 +1,5 @@
 .register-form {
-
-    &__title {
+  &__title {
     display: block;
     text-align: center;
     margin-bottom: 12px;
@@ -8,36 +7,32 @@
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    
 
     @media screen and (min-width: 1200px) {
-        line-height: 1.15;
-        
+      line-height: 1.15;
     }
-    
-}
+  }
 
-    &__group {
+  &__group {
     margin-bottom: 20px;
-    
-}
+  }
 
-    &__field {
+  &__field {
     position: relative;
     display: block;
     margin-bottom: 10px;
-}
+  }
 
-    &__label {
+  &__label {
     display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--secondary-color);
-}
+  }
 
-    &__input {
+  &__input {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -47,30 +42,30 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-    &__input:focus,
-    &__input:hover {
+  &__input:focus,
+  &__input:hover {
     border-color: var(--link-active);
-}
+  }
 
-    &__input:focus+.register-form-icon {
+  &__input:focus + .register-form-icon {
     fill: var(--link-active);
-}
+  }
 
-    &__input:hover+.register-form-icon {
+  &__input:hover + .register-form-icon {
     fill: var(--link-active);
-}
+  }
 
-    &__icon {
+  &__icon {
     position: absolute;
     top: 65%;
     left: 10px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-    &__desc {
+  &__desc {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -78,14 +73,12 @@
     color: var(--secondary-color);
 
     @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            line-height: 1.71;
+      font-size: 14px;
+      line-height: 1.71;
     }
+  }
 
-
-}
-
-    &__heading {
+  &__heading {
     display: block;
     margin-bottom: 4px;
     font-weight: 400;
@@ -93,10 +86,9 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--secondary-color);
-}
+  }
 
-
-    &__message {
+  &__message {
     display: block;
     width: 100%;
     height: 120px;
@@ -107,42 +99,42 @@
     border-radius: 4px;
     font-size: 12px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-    &__message:focus,
-    &__message:hover {
+  &__message:focus,
+  &__message:hover {
     border-color: var(--link-active);
-}
+  }
 
-    &__message::placeholder {
+  &__message::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-}
+  }
 
-    &__agreement {
+  &__agreement {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     margin-bottom: 30px;
-}
+  }
 
-    &__link {
+  &__link {
     color: var(--link-active);
-}
+  }
 
-    &__checkbox:checked+.register-form__icons .icon-checked {
+  &__checkbox:checked + .register-form__icons .icon-checked {
     opacity: 1;
-}
+  }
 
-    &__checkbox:checked+.register-form__icons .icon-unchecked {
+  &__checkbox:checked + .register-form__icons .icon-unchecked {
     opacity: 0;
-}
+  }
 
-    &__btn {
+  &__btn {
     display: block;
     margin: 0 auto;
     width: 200px;
@@ -160,20 +152,20 @@
     cursor: pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-    &__btn:hover,
-    &__btn:focus {
+  &__btn:hover,
+  &__btn:focus {
     background-color: var(--button-color-active);
-}
+  }
 }
 
 .icon-checked {
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-unchecked {
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -1,52 +1,50 @@
-
 .nav__list {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    min-width: 45px;
-    margin-left: 93px;
-    margin-right: auto;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  min-width: 45px;
+  margin-left: 93px;
+  margin-right: auto;
 
-@media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__link:hover,
 .nav__link:focus {
-    color: var(--link-active);
+  color: var(--link-active);
 }
 
 .nav__link {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
 .link:focus {
-    color: var(--link-active);
+  color: var(--link-active);
 }
 
 .nav {
-    display: flex;
-    margin-right: auto;
-   
+  display: flex;
+  margin-right: auto;
 }
 
 .nav__item {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-right: 50px;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
 }
 
 .link-address {
-    fill: currentColor;
-    display: flex;
-    gap: 10px;
- }
+  fill: currentColor;
+  display: flex;
+  gap: 10px;
+}

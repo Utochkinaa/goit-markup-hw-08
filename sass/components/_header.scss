@@ -51,7 +51,12 @@
       margin-right: 50px;
     }
   }
+
+  &-logo {
+    color: var(--logo-header);
+  }
 }
+
 .current::after {
   position: absolute;
   content: "";

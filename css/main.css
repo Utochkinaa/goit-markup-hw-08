@@ -18,7 +18,7 @@
   --button-color-active: #188ce8;
   --logo-header: #000000;
   --contacts-footer: rgba(255, 255, 255, 0.6);
-  --social-links: #AFB1B8;
+  --social-links: #afb1b8;
   /* ANIMATION */
   --type: cubic-bezier(0.4, 0, 0.2, 1);
   --time: 250ms;
@@ -236,6 +236,9 @@ ul {
     margin-right: 50px;
   }
 }
+.header-logo {
+  color: var(--logo-header);
+}
 
 .current::after {
   position: absolute;
@@ -286,11 +289,6 @@ ul {
     padding-bottom: 25px;
   }
 }
-
-.header-logo {
-  color: var(--logo-header);
-}
-
 .logo-footer {
   font-style: Bold;
   font-size: 26px;
@@ -305,7 +303,6 @@ ul {
           align-items: center;
   margin-bottom: 20px;
 }
-
 .logo-accent {
   color: var(--hero-color);
   font-family: var(--logo-font);
@@ -878,7 +875,6 @@ ul {
   margin-left: auto;
 }
 .footer__title {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
