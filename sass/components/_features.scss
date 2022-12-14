@@ -1,5 +1,5 @@
 .features {
-  padding-bottom: 0;
+  padding-bottom: 30px;
 
   &__subtitle {
     font-size: 14px;
@@ -35,7 +35,9 @@
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
+ 
       // max-width: 354px;
+      
     }
 
     @media screen and (min-width: 1200px) {
